@@ -6,13 +6,18 @@ with the following tables:
 
 -instafollower
 
-     Column      |          Type          | Collation | Nullable | Default 
 -----------------+------------------------+-----------+----------+---------
+ 
  community_name  | character varying(256) |           |          | 
+ 
  community_id    | integer                |           |          | 
+ 
  account_id      | character varying(256) |           |          | 
+ 
  followers_value | character varying(256) |           |          | 
+ 
  followers_name  | character varying(256) |           |          | 
+ 
  date            | character varying(256) |           |          | 
 
 -instamediainsights
