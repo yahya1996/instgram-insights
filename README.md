@@ -37,11 +37,10 @@ with the following tables:
 ----------------+------------------------+-----------+----------+---------
  community_name | character varying(60)  |           |          | 
  community_id   | integer                |           |          | 
+ account_id     | character varying(60)  |           |          | 
+ fb_token       | character varying(255) |           |          | 
  ig_token       | character varying(255) |           |          | 
  ig_account_id  | character varying(60)  |           |          | 
-
-
-
 
 
 
