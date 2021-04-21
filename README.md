@@ -46,7 +46,15 @@ with the following tables:
 
 
 
+# Note:
 
+in this section of code you have to change the crednatils
 
-
+  connection = psycopg2.connect(
+      user = "something",#here you add the username of redshift conn
+      password = "password", #here you add the password of redshift conn
+      host = "host",#here you add the host of redshift conn
+      port = "5439",#port of redshift host
+      database = "something"
+  )
 
