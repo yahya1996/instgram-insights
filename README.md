@@ -1,1 +1,44 @@
-# instgram-insights
+# instgram-insights with redshift , posgres
+
+you only have to setup up and create redshift , postgres DB 
+
+with the following tables:
+
+-instafollower
+
+     Column      |          Type          | Collation | Nullable | Default 
+-----------------+------------------------+-----------+----------+---------
+ community_name  | character varying(256) |           |          | 
+ community_id    | integer                |           |          | 
+ account_id      | character varying(256) |           |          | 
+ followers_value | character varying(256) |           |          | 
+ followers_name  | character varying(256) |           |          | 
+ date            | character varying(256) |           |          | 
+
+-instamediainsights
+
+
+     Column     |          Type           | Collation | Nullable | Default 
+----------------+-------------------------+-----------+----------+---------
+ community_name | character varying(256)  |           |          | 
+ community_id   | integer                 |           |          | 
+ account_id     | character varying(256)  |           |          | 
+ media_id       | character varying(256)  |           |          | 
+ media_url      | character varying(3000) |           |          | 
+ date           | character varying(256)  |           |          | 
+ engagement     | character varying(256)  |           |          | 
+ impressions    | character varying(256)  |           |          | 
+ reach          | character varying(256)  |           |          | 
+
+
+-alex_fb_tokens
+
+     Column     |          Type          | Collation | Nullable | Default 
+----------------+------------------------+-----------+----------+---------
+ community_name | character varying(60)  |           |          | 
+ community_id   | integer                |           |          | 
+ ig_token       | character varying(255) |           |          | 
+ ig_account_id  | character varying(60)  |           |          | 
+
+
+
