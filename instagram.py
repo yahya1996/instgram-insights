@@ -7,11 +7,11 @@ from datetime import datetime,date, timedelta
 
 try:
   connection = psycopg2.connect(
-      user = "y_ayyoub",
-      password = "zer3raiw7YUMPknup",
-      host = "reporting.chvcwsrzy2fr.eu-west-1.redshift.amazonaws.com",
+      user = "something",#here you add the username of redshift conn
+      password = "password", #here you add the password of redshift conn
+      host = "host",#here you add the host of redshift conn
       port = "5439",
-      database = "reportingprod"
+      database = "something"
   )
   cursor = connection.cursor()
   print(connection.get_dsn_parameters(),"\n")
@@ -137,9 +137,9 @@ def main():
         sync_instagram_account(entity)
 
 def get_instagram_entity():
-  cursor = connection.cursor()  
-  pg_select = """ select * from consultancy_integrations."alex_fb_tokens" """ 
-#   pg_select = """ select * from consultancy_integrations."alex_fb_tokens" limit 100 OFFSET 19 """ 
+  cursor = connection.cursor()
+  pg_select = """ select * from consultancy_integrations."alex_fb_tokens" """
+#   pg_select = """ select * from consultancy_integrations."alex_fb_tokens" limit 100 OFFSET 19 """
 #   SELECT * from consultancy_integrations.alex_fb_tokens limit 100 OFFSET 19
   cursor.execute(pg_select)
   record = cursor.fetchall()
